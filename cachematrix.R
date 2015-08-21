@@ -9,10 +9,12 @@
 makeCacheMatrix <- function(x = matrix()) {
   
   # initialize the inverse matrix to NULL during the first call to makeCacheMatrix  
+  
   inv<-NULL
   
   # funciton to set a new value for the underlying martix
-  set<-function(y) {
+ 
+   set<-function(y) {
     
     x<<-y
     inv<<-NULL
